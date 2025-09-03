@@ -1,0 +1,41 @@
+@use './variable.scss' as *;
+
+// .auth_wrapper {
+//     // background-color: $primary-color;
+//     background-image: url('https://in.pinterest.com/pin/774124930363718/x');
+//     // width: 375px;
+//     height: 100vh;
+//     margin: 0 auto; // horizontal center only
+//     padding: 20px;
+//     // border-radius: 8px;
+//   }
+
+
+  .auth_wrapper {
+    position: relative;
+    // width: 100%;
+    height: 100vh; /* or whatever height you want */
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .auth_wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 158, 106, 0.58); 
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  /* Make sure the Signup content is above the overlay */
+  .auth_wrapper > *:not(.overlay) {
+    position: relative;
+    z-index: 2;
+  }
+  

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  background: #f3fff7;
+  max-width: 390px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@media (max-width: 500px) {
+  #root {
+    max-width: 100%;
+  }
+}
+
+a {
+  color: white !important;
+}
+
+@layer utilities {
+  .text-shadow-custom {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Hide scrollbar in Chrome, Safari, Edge */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar in Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+}

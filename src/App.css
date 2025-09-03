@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Pacifico&display=swap");
+* {
+  font-family: "Outfit", sans-serif;
+  /* color: #fff; */
+}
+
+.modal-body.payment-qr {
+  padding: 32px !important;
+}
+
+.signup-btn {
+  margin-top: 30px !important;
+}
+
+.welcome_txt {
+  font-family: "Pacifico", cursive;
+}
+
+.usdt_plan {
+  font-family: "Open Sans", sans-serif;
+}
+
+.radial_bg {
+  background: radial-gradient(circle, #4EE6BB 0%, #2AC18C 100%);
+}
